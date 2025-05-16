@@ -1,0 +1,26 @@
+#navbar {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background-color: #b1b0b8;
+}
+
+#navbar a {
+    font-family: sans-serif;
+    float: right;
+    display: block;
+    color: #ffffff;
+    text-align: left;
+    padding: 20px;
+    text-decoration: none;
+    margin-right: 30px;
+    font-weight: bold;
+}
+
+#logo a {
+    font-family: sans-serif;
+    font-size: large;
+    float: left;
+    font-weight: bold;
+}
+
