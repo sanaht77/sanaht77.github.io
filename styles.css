@@ -1,3 +1,7 @@
+.font {
+    font-family: "Montserrat", sans-serif;
+}
+
 #navbar {
     position: sticky;
     top: 0;
@@ -6,7 +10,6 @@
 }
 
 #navbar a {
-    font-family: sans-serif;
     float: right;
     display: block;
     color: #ffffff;
@@ -18,9 +21,40 @@
 }
 
 #logo a {
-    font-family: sans-serif;
     font-size: large;
     float: left;
     font-weight: bold;
+}
+
+#title {
+    text-align: center;
+    font-size: 40px;
+    padding: 210px;
+    line-height: 0.3;
+}
+
+#title h5 {
+    color:#584461;
+}
+
+#about {
+    text-align: center;
+    font-size: 20px;
+}
+
+#about h3 {
+    font-weight: bold;
+}
+
+#about a {
+    background-color: #584461;
+    border-radius: 25px;
+    color: white;
+    padding: 14px 50px;
+    margin: 0px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+
 }
 
