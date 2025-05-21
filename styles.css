@@ -30,9 +30,10 @@ html{
 }
 
 #title {
+    scroll-margin-top: 320px;
     text-align: center;
     font-size: 40px;
-    padding: 210px;
+    padding: 235px;
     line-height: 0.3;
 }
 
@@ -41,10 +42,10 @@ html{
 }
 
 #about {
-    scroll-margin-top: 290px;
+    scroll-margin-top: 320px;
     font-size: 20px;
     text-align: center;
-    padding-bottom: 200px;
+    padding-bottom: 220px;
 }
 
 #about h3 {
@@ -73,7 +74,7 @@ html{
 #skills {
     font-size: 20px;
     text-align: center;
-    padding-bottom: 200px;
+    padding-bottom: 220px;
 }
 
 #skills img {
