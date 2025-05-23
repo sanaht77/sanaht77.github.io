@@ -33,7 +33,7 @@ html{
     scroll-margin-top: 320px;
     text-align: center;
     font-size: 40px;
-    padding: 235px;
+    padding: 170px;
     line-height: 0.3;
 }
 
@@ -41,11 +41,21 @@ html{
     color:#584461;
 }
 
+#title img {
+    width: 10%;
+    height: auto;
+    display: inline-block;
+    margin: 20px 40px;
+    border-radius: 50%;
+    border: 5px solid #584461;
+}
+
 #about {
-    scroll-margin-top: 320px;
+    scroll-margin-top: 60px;
     font-size: 20px;
     text-align: center;
-    padding-bottom: 220px;
+    padding: 230px;
+    background-color: #584461;
 }
 
 #about h3 {
@@ -53,7 +63,7 @@ html{
 }
 
 #about a {
-    background-color: #584461;
+    background-color: #392c3f;
     border-radius: 25px;
     color: white;
     padding: 14px 50px;
@@ -68,13 +78,15 @@ html{
     scroll-margin-top: 280px;
     font-size: 20px;
     text-align: center;
-    padding-bottom: 200px;
+    padding: 230px;
+    background-color: #584461;
 }
 
 #skills {
+    scroll-margin-top: 60px;
     font-size: 20px;
     text-align: center;
-    padding-bottom: 220px;
+    padding: 250px;
 }
 
 #skills img {
