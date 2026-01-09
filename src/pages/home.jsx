@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import "./homeStyles.css";
 import Particle from "../components/particle.jsx";
 import Aurora from '../components/aurora.jsx';
+import SpotlightCard from '../components/SpotlightCard';
 
 export default function Home() {
 
@@ -40,7 +41,24 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section about">
+      <section className="section projects">
+
+        <span className="tiles">
+        <SpotlightCard className="tile" spotlightColor="rgba(131, 26, 201, 0.2)">
+        <p>project 1</p>
+        </SpotlightCard>
+        <SpotlightCard className="tile" spotlightColor="rgba(131, 26, 201, 0.2)">
+        <p>project 2</p>
+        </SpotlightCard>
+        <SpotlightCard className="tile" spotlightColor="rgba(131, 26, 201, 0.2)">
+        <p>project 3</p>
+        </SpotlightCard>
+        </span>
+
+
+      </section>
+
+            <section className="section about">
         <p className="paragraph">  I'm Sanah, a second year computer science student at Simon Fraser University. 
           I began programming on my high school VEX Robotics team, 
           where I combined technical skills with teamwork to design 
