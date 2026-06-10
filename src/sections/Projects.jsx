@@ -20,11 +20,6 @@ export default function Projects() {
                 <ArrowIcon />
               </a>
             </div>
-            <div className="project-art" aria-hidden="true">
-              <span className="shape shape--one" />
-              <span className="shape shape--two" />
-              <span className="shape shape--three" />
-            </div>
             <div className="project-content">
               <h3>{project.title}</h3>
               <p>{project.description}</p>

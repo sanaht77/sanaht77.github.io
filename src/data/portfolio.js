@@ -12,64 +12,84 @@ export const profile = {
 export const projects = [
   {
     number: "01",
-    title: "Personal Portfolio",
+    title: "TailBlazer",
     description:
-      "A responsive portfolio built to bring my work, experience, and story together in one thoughtfully designed space.",
-    tags: ["React", "JavaScript", "CSS"],
-    link: "https://github.com/sanaht77",
-    accent: "coral",
+      "Users can send missing animal reports, which can then be viewed on an interactive map. Reports are stored and retrieved, and include reverse geocded locations.",
+    tags: ["React", "TypeScript", "REST API"],
+    link: "https://github.com/sanaht77/272-A4",
+    accent: "pink",
   },
   {
     number: "02",
-    title: "Cat Fact Generator",
+    title: "HustleHub",
     description:
-      "A playful web app that fetches facts from a public API and renders custom cat-inspired components dynamically.",
-    tags: ["JavaScript", "REST API", "HTML/CSS"],
+      "Online talent market where service providers can post listings and clients can book them, using a database. Pending approval from group to publish repository.",
+    tags: ["Python", "PostgreSQL"],
     link: "https://github.com/sanaht77",
-    accent: "blue",
+    accent: "violet",
   },
   {
     number: "03",
-    title: "PID Motion Control",
+    title: "MatchBack",
     description:
-      "A custom PID control loop for a VEX V5 robot, tuned for precise autonomous movement and launcher control.",
-    tags: ["C++", "Robotics", "Algorithms"],
-    link: "https://github.com/sanaht77",
-    accent: "yellow",
+      "App helps communities find and retrieve lost items through an AI powered smart matching system. Created at nwHacks 2026",
+    tags: ["React Native", "Expo Go", "Gemini API", "PostgreSQL"],
+    link: "https://github.com/nyamatp123/LostAndFound",
+    accent: "plum",
+  },  
+  {
+    number: "04",
+    title: "EchoLabs",
+    description:
+      "Application to help educators perform oral exams through an AI powered examination. Created at JourneyHacks 2026",
+    tags: ["TypeScript", "Gemini API", "Google OAuth"],
+    link: "https://github.com/megabyte6/EchoLabs",
+    accent: "plum",
+  }, 
+  {
+    number: "05",
+    title: "DeliDash",
+    description:
+      "A food delivery web app where users can order from restaurants and drivers can be connected with orders.",
+    tags: ["Node.js", "Express", "MySQL"],
+    link: "https://github.com/RYLwoojin/354DeliveryApp",
+    accent: "pink",
   },
 ];
 
-export const skills = [
-  "Python",
-  "C++",
-  "C",
-  "JavaScript",
-  "TypeScript",
-  "RISC-V Assembly",
-  "React",
-  "HTML & CSS",
-  "Git",
-  "Linux",
-  "PostgreSQL",
-  "MySQL",
-  "SQL",
-  "REST APIs",
-  "Bootstrap",
-  "npm",
-  "Git",
-  "Github",
-  "Expo Go",
-  "Agile",
-  "Docker",
+export const skillGroups = [
+  {
+    title: "Programming languages",
+    skills: ["Python", "C++", "C", "JavaScript", "TypeScript", "RISC-V Assembly"],
+  },
+  {
+    title: "Web technologies & databases",
+    skills: ["HTML & CSS", "REST APIs", "PostgreSQL", "MySQL", "SQL"],
+  },
+  {
+    title: "Frameworks & libraries",
+    skills: ["React", "Bootstrap", "Expo Go"],
+  },
+  {
+    title: "Developer tools & practices",
+    skills: ["Git", "GitHub", "Linux", "Docker", "npm", "Agile"],
+  },
 ];
 
 export const resumeItems = [
   {
-    period: "2024 - Present",
+    period: "2023 - Present",
+    title: "Retail Associate",
+    place: "London Drugs",
+    description:
+      "Collaborating with a fast-moving team while building strong communication, organization, and customer service skills.",
+  },
+  {
+    period: "2024 - 2028",
     title: "BSc, Computer Science",
     place: "Simon Fraser University",
     description:
-      "Studying data structures, algorithms, computer systems, discrete mathematics, and software engineering.",
+      "Relevant Courses: Data Structures & Algorithms, Client-Side Web Development, Computer Architecture, Systems Programming, Database Systems, Software Engineering.",
   },
   {
     period: "2021 - 2024",
@@ -77,12 +97,5 @@ export const resumeItems = [
     place: "VEX Robotics",
     description:
       "Built and programmed competition robots, wrote autonomous routes in C++, and developed a PID motion tracking system.",
-  },
-  {
-    period: "Present",
-    title: "Retail Associate",
-    place: "London Drugs",
-    description:
-      "Collaborating with a fast-moving team while building strong communication, organization, and customer service skills.",
   },
 ];

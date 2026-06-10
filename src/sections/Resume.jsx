@@ -1,4 +1,4 @@
-import resumeImage from "../assets/resumeNoAddress.png";
+import resumePdf from "../assets/Sanah Tatla - Resume.pdf";
 import ArrowIcon from "../components/ArrowIcon";
 import SectionHeading from "../components/SectionHeading";
 import { resumeItems } from "../data/portfolio";
@@ -10,9 +10,9 @@ export default function Resume() {
         <SectionHeading
           number="03"
           label="Experience"
-          title="The story so far."
+          title="Experience & Education."
         />
-        <a className="button button--outline" href={resumeImage} target="_blank" rel="noreferrer">
+        <a className="button button--outline" href={resumePdf} target="_blank" rel="noreferrer">
           View full resume
           <ArrowIcon />
         </a>

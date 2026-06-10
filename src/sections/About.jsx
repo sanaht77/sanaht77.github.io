@@ -1,5 +1,5 @@
 import SectionHeading from "../components/SectionHeading";
-import { profile, skills } from "../data/portfolio";
+import { profile, skillGroups } from "../data/portfolio";
 
 export default function About() {
   return (
@@ -7,32 +7,39 @@ export default function About() {
       <SectionHeading
         number="01"
         label="About me"
-        title="Learning deeply. Building intentionally."
+        title="Developing skills through projects and curiosity."
       />
 
       <div className="about-grid">
         <div className="about-story">
           <p className="lead">
             I&apos;m a second-year computer science student at {profile.school},
-            drawn to the place where logic meets creativity.
+            who is focused on growing as a developer.
           </p>
           <p>
             My path into programming started with competitive robotics, where I
-            learned that the best solutions come from patient iteration, clear
-            communication, and a willingness to take things apart.
+            learned to debug under pressure, work closely with a team, and improve
+            solutions through testing and iteration.
           </p>
           <p>
-            Today, I&apos;m growing my foundation in software engineering while
-            building web projects that are useful, accessible, and pleasant to
-            spend time with. I&apos;m currently looking for opportunities to
-            learn from a great team and contribute to real-world products.
+            Today, I&apos;m strengthening my foundation in software engineering through coursework
+            and personal projects using a variety of tools. I'm currently looking for a co-op
+            opportunity where I can learn from experienced developers, contribute to real products,
+            and keep growing as a software developer.
           </p>
         </div>
 
         <aside className="skills-panel">
           <p className="panel-label">Tools I work with</p>
-          <div className="skill-list">
-            {skills.map((skill) => <span key={skill}>{skill}</span>)}
+          <div className="skill-groups">
+            {skillGroups.map((group) => (
+              <div className="skill-group" key={group.title}>
+                <h3>{group.title}</h3>
+                <div className="skill-list">
+                  {group.skills.map((skill) => <span key={skill}>{skill}</span>)}
+                </div>
+              </div>
+            ))}
           </div>
           <div className="availability">
             <span className="status-dot" />
