@@ -15,7 +15,7 @@ export default function Header() {
   return (
     <header className="site-header">
       <a className="wordmark" href="#home" onClick={closeMenu} aria-label="Sanah Tatla, home">
-        ST<span>.</span>
+        ST
       </a>
 
       <button
