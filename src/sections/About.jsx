@@ -7,7 +7,7 @@ export default function About() {
       <SectionHeading
         number="01"
         label="About me"
-        title="Developing skills through projects and curiosity."
+        title="Developing skills through projects and curiosity"
       />
 
       <div className="about-grid">
@@ -36,14 +36,12 @@ export default function About() {
               <div className="skill-group" key={group.title}>
                 <h3>{group.title}</h3>
                 <div className="skill-list">
-                  {group.skills.map((skill) => <span key={skill}>{skill}</span>)}
+                  {group.skills.map((skill) => (
+                    <span key={skill} tabIndex="0">{skill}</span>
+                  ))}
                 </div>
               </div>
             ))}
-          </div>
-          <div className="availability">
-            <span className="status-dot" />
-            Open to internship opportunities
           </div>
         </aside>
       </div>

@@ -12,7 +12,7 @@ export const profile = {
 export const projects = [
   {
     number: "01",
-    title: "TailBlazer",
+    title: "Animal Report Web App",
     description:
       "Users can send missing animal reports, which can then be viewed on an interactive map. Reports are stored and retrieved, and include reverse geocded locations.",
     tags: ["React", "TypeScript", "REST API"],
@@ -21,7 +21,7 @@ export const projects = [
   },
   {
     number: "02",
-    title: "HustleHub",
+    title: "Freelancer Marketplace Web App",
     description:
       "Online talent market where service providers can post listings and clients can book them, using a database. Pending approval from group to publish repository.",
     tags: ["Python", "PostgreSQL"],
@@ -30,7 +30,7 @@ export const projects = [
   },
   {
     number: "03",
-    title: "MatchBack",
+    title: "AI Powered Lost and Found IOS App",
     description:
       "App helps communities find and retrieve lost items through an AI powered smart matching system. Created at nwHacks 2026",
     tags: ["React Native", "Expo Go", "Gemini API", "PostgreSQL"],
@@ -39,7 +39,7 @@ export const projects = [
   },  
   {
     number: "04",
-    title: "EchoLabs",
+    title: "AI Powered Oral Exam Web App",
     description:
       "Application to help educators perform oral exams through an AI powered examination. Created at JourneyHacks 2026",
     tags: ["TypeScript", "Gemini API", "Google OAuth"],
@@ -48,7 +48,7 @@ export const projects = [
   }, 
   {
     number: "05",
-    title: "DeliDash",
+    title: "Food Delivery Web App",
     description:
       "A food delivery web app where users can order from restaurants and drivers can be connected with orders.",
     tags: ["Node.js", "Express", "MySQL"],
@@ -76,20 +76,23 @@ export const skillGroups = [
   },
 ];
 
-export const resumeItems = [
-  {
-    period: "2023 - Present",
-    title: "Retail Associate",
-    place: "London Drugs",
-    description:
-      "Collaborating with a fast-moving team while building strong communication, organization, and customer service skills.",
-  },
+export const educationItems = [
   {
     period: "2024 - 2028",
     title: "BSc, Computer Science",
     place: "Simon Fraser University",
     description:
       "Relevant Courses: Data Structures & Algorithms, Client-Side Web Development, Computer Architecture, Systems Programming, Database Systems, Software Engineering.",
+  },
+];
+
+export const experienceItems = [
+  {
+    period: "2023 - Present",
+    title: "Retail Associate",
+    place: "London Drugs",
+    description:
+      "Collaborating with a fast-moving team while building strong communication, organization, and customer service skills.",
   },
   {
     period: "2021 - 2024",

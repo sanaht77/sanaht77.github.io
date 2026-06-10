@@ -417,6 +417,24 @@ button {
   font-size: 0.75rem;
 }
 
+.skill-list span {
+  cursor: default;
+  transition:
+    border-color 180ms ease,
+    color 180ms ease,
+    background 180ms ease,
+    transform 180ms ease;
+}
+
+.skill-list span:hover,
+.skill-list span:focus-visible {
+  border-color: var(--pink);
+  color: var(--paper);
+  background: var(--pink);
+  outline: none;
+  transform: translateY(-3px);
+}
+
 .availability {
   display: flex;
   align-items: center;
@@ -482,17 +500,17 @@ button {
   display: grid;
   width: 34px;
   height: 34px;
-  border: 1px solid var(--line);
+  border: 1px solid var(--card-color);
   border-radius: 50%;
-  color: var(--card-color);
+  color: var(--paper);
+  background: var(--card-color);
   place-items: center;
-  transition: color 180ms ease, background 180ms ease, border-color 180ms ease;
+  transition: filter 180ms ease, transform 180ms ease;
 }
 
 .project-topline a:hover {
-  border-color: var(--card-color);
-  color: var(--paper);
-  background: var(--card-color);
+  filter: brightness(0.88);
+  transform: translateY(-2px);
 }
 
 .project-card--pink {
@@ -560,15 +578,31 @@ button {
   gap: 40px;
 }
 
-.timeline {
+.resume-columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(50px, 8vw, 120px);
   margin-top: 80px;
+}
+
+.resume-column-title {
+  margin: 0 0 24px;
+  color: var(--ink);
+  font-family: "Manrope", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.timeline {
   border-top: 1px solid var(--ink);
 }
 
 .timeline-item {
-  display: grid;
-  grid-template-columns: 0.6fr 1fr 1.3fr;
-  gap: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
   padding: 36px 0;
   border-bottom: 1px solid var(--line);
 }
@@ -594,6 +628,7 @@ button {
 }
 
 .timeline-description {
+  margin-top: 8px;
   color: var(--muted);
   font-size: 0.9rem;
   line-height: 1.75;
@@ -687,13 +722,6 @@ button {
     min-height: 0;
   }
 
-  .timeline-item {
-    grid-template-columns: 0.6fr 1fr;
-  }
-
-  .timeline-description {
-    grid-column: 2;
-  }
 }
 
 @media (max-width: 720px) {
@@ -759,23 +787,15 @@ button {
 
   .about-grid,
   .project-grid,
-  .timeline {
+  .resume-columns {
+    grid-template-columns: 1fr;
+    gap: 60px;
     margin-top: 60px;
   }
 
   .resume-header {
     align-items: flex-start;
     flex-direction: column;
-  }
-
-  .timeline-item {
-    grid-template-columns: 1fr;
-    gap: 12px;
-  }
-
-  .timeline-description {
-    grid-column: auto;
-    margin-top: 10px;
   }
 
   .footer {

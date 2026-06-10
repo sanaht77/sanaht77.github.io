@@ -6,10 +6,10 @@ export default function Hero() {
   return (
     <section className="hero" id="home">
       <div className="hero-copy">
-        <p className="eyebrow">Hi, I&apos;m {profile.name}</p>
+       {/* <p className="eyebrow">Hi, I&apos;m {profile.name}</p> */}
         <h1>
-          Growing as a
-          <span className="hero-accent"> Developer.</span>
+          Hello, I'm
+          <span className="hero-accent"> Sanah Tatla.</span>
         </h1>
         <p className="hero-intro">
           I’m a computer science student exploring software development 
@@ -33,8 +33,8 @@ export default function Hero() {
         <div className="orbit orbit--one" />
         <div className="orbit orbit--two" />
         <p className="location-note">
-          <span />
-          Based in {profile.location}
+          <span className="status-dot" />
+            Open to internship opportunities
         </p>
       </div>
 

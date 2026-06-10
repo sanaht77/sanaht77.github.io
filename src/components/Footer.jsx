@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="footer" id="contact">
       <div>
         <p className="eyebrow eyebrow--light">Open to co-op opportunities</p>
-        <h2>Let's Connect.</h2>
+        <h2>Let's connect</h2>
       </div>
       <div className="footer-links">
         <a href={`mailto:${profile.email}`}>
@@ -28,7 +28,7 @@ export default function Footer() {
       </div>
 
       <div className="footer-bottom">
-        <p>Created by {profile.name}</p>
+        <p>{profile.name} 2026</p>
       </div>
     </footer>
   );
