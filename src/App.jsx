@@ -1,24 +1,21 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-
-import Home from "./pages/home.jsx";
-import Projects from "./pages/projects.jsx";
-import About from "./pages/about.jsx";
-import Resume from "./pages/resume.jsx";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import About from "./sections/About";
+import Hero from "./sections/Hero";
+import Projects from "./sections/Projects";
+import Resume from "./sections/Resume";
 
 export default function App() {
   return (
-    <BrowserRouter>
-
-      <Routes>
-
-        <Route path="/" element={<Home />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/resume" element={<Resume />} />
-
-      </Routes>
-
-    </BrowserRouter>
-      
+    <div className="site-shell">
+      <Header />
+      <main>
+        <Hero />
+        <About />
+        <Projects />
+        <Resume />
+      </main>
+      <Footer />
+    </div>
   );
 }
