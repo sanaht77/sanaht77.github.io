@@ -60,7 +60,7 @@ button {
 }
 
 .site-header {
-  position: absolute;
+  position: fixed;
   z-index: 20;
   top: 0;
   left: 0;
@@ -68,7 +68,11 @@ button {
   width: 100%;
   align-items: center;
   justify-content: space-between;
-  padding: 28px clamp(24px, 5vw, 76px);
+  padding: 20px clamp(24px, 5vw, 76px);
+  border-bottom: 1px solid rgba(62, 39, 70, 0.1);
+  background: rgba(247, 243, 248, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
 }
 
 .wordmark {
@@ -726,7 +730,7 @@ button {
 
 @media (max-width: 720px) {
   .site-header {
-    position: absolute;
+    position: fixed;
   }
 
   .menu-button {

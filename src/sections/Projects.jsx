@@ -8,7 +8,7 @@ export default function Projects() {
       <SectionHeading
         number="02"
         label="Selected work"
-        title="My favourite projects"
+        title="Coursework and personal projects"
       />
 
       <div className="project-grid">
