@@ -1,4 +1,4 @@
-import resumePdf from "../assets/Sanah Tatla - Resume.pdf";
+import resumePdf from "../assets/Sanah Tatla Resume (June 12, 2026).pdf";
 import ArrowIcon from "../components/ArrowIcon";
 import SectionHeading from "../components/SectionHeading";
 import { educationItems, experienceItems } from "../data/portfolio";

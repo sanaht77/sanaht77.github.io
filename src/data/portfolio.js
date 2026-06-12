@@ -88,14 +88,21 @@ export const educationItems = [
 
 export const experienceItems = [
   {
-    period: "2023 - Present",
+    period: "September 2025 - November 2025",
+    title: "Technical Intern",
+    place: "Ledgrly AI",
+    description:
+      "Collaborated with team to implement UI functionality, resolve bugs, and prepare for deployment.",
+  },
+  {
+    period: "August 2023 - Present",
     title: "Retail Associate",
     place: "London Drugs",
     description:
       "Collaborating with a fast-moving team while building strong communication, organization, and customer service skills.",
   },
   {
-    period: "2021 - 2024",
+    period: "September 2021 - June 2024",
     title: "Competitive Robotics",
     place: "VEX Robotics",
     description:
