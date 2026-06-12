@@ -29,7 +29,7 @@ export default function Header() {
   }, [menuOpen]);
 
   return (
-    <header className="site-header">
+    <header className={`site-header ${menuOpen ? "site-header--menu-open" : ""}`}>
       <a className="wordmark" href="#home" onClick={closeMenu} aria-label="Sanah Tatla, home">
         ST
       </a>
